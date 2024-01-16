@@ -180,6 +180,7 @@ def start_demo():
 if __name__ == '__main__':
     parser = argparse.ArgumentParser()
     parser.add_argument('--input_file', type=str, default='output_test.csv')
+    parser.add_argument('--batch_ids_file', type=str, default='batch_ids.txt')
     parser.add_argument('--num_annotator', type=int, default=4)
     parser.add_argument('--result_file', type=str, default='result.jsonl')
     args = parser.parse_args()
@@ -191,6 +192,10 @@ if __name__ == '__main__':
         filemode='w'
     )
     annotation_batches = split_data(input_file=args.input_file, n=args.num_annotator)  # {str: batch_id, list: batch_data}
+    with open(args.batch_ids_file, 'w') as fp:
+        for key in annotation_batches:
+            fp.write(key+'\n')
+
     logging.info('batch_ids: {}'.format(annotation_batches.keys()))
     cache_fp = open(args.result_file, 'w')
     result = {batch_id: [None for i in range(len(annotation_batches[batch_id]))] for batch_id in annotation_batches}
