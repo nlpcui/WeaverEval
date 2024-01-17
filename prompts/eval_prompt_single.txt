@@ -1,0 +1,51 @@
+[Task Description]
+Please act as an impartial judge and evaluate the quality of a response provided by a Chinese AI assistant based on the given domain, task, and user's instructions.
+Begin your output by analyzing the quality of the responses. Then, based on your analyses, score the response on a scale of 1 to 5, where 1 is the lowest and 5 is the highest. Decimal scores are particularly encouraged.
+All inputs (task, domain, and the assistants' response) are in Chinese.
+
+Your analyses and scores should be divided into the following aspects:
+
+[Evaluation Metrics]
+** Relevance ** refers to the degree to which the response matches the user's instructions. A relevant response accurately addresses the specific topic or question posed by the user, staying on-topic and providing information or solutions that are directly related to the user's request.
+
+** Fluency ** pertains to the linguistic quality of the response. This includes grammar, syntax, and the natural flow of language. A fluent response should be grammatically correct, logically structured, and reads as if it were written by a proficient human writer. It should be coherent, with clear and logical connections between sentences and paragraphs.
+
+** Creativity ** is about the generation of novel, unique, or innovative ideas, solutions, or expressions. A creative response should go beyond standard or expected outputs, offering insights or idea that are original and thought-provoking. It is particular important when user's needs require non-traditional solutions.
+
+** Usefulness ** measures how beneficial the response is in serving the user's purpose. A useful output should provide practical valuable and assists the user in achieving the user's goal in the context of the specified domain, task, and user's instructions.
+
+** Overall ** combines all the aforementioned factors and serves as a holistic comparison. It looks at the big picture of how well the response performs across all dimensions of quality, reflecting the general effectiveness of the output in handling the given task and instructions in the given domain.
+
+Please make sure you read and understand the task and metrics carefully. Please keep this document open while evaluating, and refer to it as needed.
+
+[The Start of Input]
+[Domain]:{domain}
+
+[Task]:{task}
+
+[Instruction]
+{instruction}
+
+{Assistant's Response}
+{model_output}
+
+[The End of Input]
+
+[Your Output] (Please strictly organize your output in the format below)
+[Analyses]
+
+Relevance analysis: <your analysis>
+Fluency analysis: <your analysis>
+Usefulness analysis: <your analysis>
+Creativity analysis: <your analysis>
+Overall analysis: <your analysis>
+
+[Scores] (Only provide a (preferably decimal) score for each aspect without other outputs.)
+
+* Relevance: <relevance score>
+* Fluency: <fluency score>
+* Usefulness: <usefulness score>
+* Creativity: <creativity score>
+* Overall: <overall score>
+
+

@@ -1,0 +1,55 @@
+[Task Description]
+Please act as an impartial judge and compare the quality of the responses provided by two Chinese AI assistants (denoted as A and B) based on the given domain, task, and user's instructions.
+Avoid any position biases and ensure that the order in which the responses were presented does not influence your decision. Do not allow the length of the responses to influence your evaluation. Do not favor certain names of the assistants. Be as objective as possible.
+Begin your output by analyzing the quality of the two responses. Then, based on the analyses, determine which response is better, or they are equally good.
+All inputs (task, domain, and the two AI assistants' outputs) are in Chinese.
+
+Your analyses and comparison should be divided into the following aspects:
+
+[Evaluation Metrics]
+** Relevance ** refers to the degree to which the response matches the user's instructions. A relevant response accurately addresses the specific topic or question posed by the user, staying on-topic and providing information or solutions that are directly related to the user's request.
+
+** Fluency ** pertains to the linguistic quality of the response. This includes grammar, syntax, and the natural flow of language. A fluent response should be grammatically correct, logically structured, and reads as if it were written by a proficient human writer. It should be coherent, with clear and logical connections between sentences and paragraphs.
+
+** Creativity ** is about the generation of novel, unique, or innovative ideas, solutions, or expressions. A creative response should go beyond standard or expected outputs, offering insights or idea that are original and thought-provoking. It is particular important when user's needs require non-traditional solutions.
+
+** Usefulness ** measures how beneficial the response is in serving the user's purpose. A useful output should provide practical valuable and assists the user in achieving the user's goal in the context of the specified domain, task, and user's instructions.
+
+** Overall ** combines all the aforementioned factors and serves as a holistic comparison. It looks at the big picture of how well the response performs across all dimensions of quality, reflecting the general effectiveness of the output in handling the given task and instructions in the given domain.
+
+Please make sure you read and understand the task and metrics carefully. Please keep this document open while evaluating, and refer to it as needed.
+
+[The Start of Input]
+[Domain]:{domain}
+
+[Task]:{task}
+
+[Instruction]
+{instruction}
+
+[Assistant A Output]
+{model_A_output}
+
+[Assistant B Output]
+{model_B_output}
+
+[The End of Input]
+
+[Your Output] (Please strictly organize your output in the format below)
+[Analyses]
+
+Relevance analysis of the two responses: <your analysis>
+Fluency analysis of the two responses: <your analysis>
+Usefulness analysis of the two responses: <your analysis>
+Creativity analysis of the two responses: <your analysis>
+Overall analysis of the two responses: <your analysis>
+
+[Comparison] (Only output the name of the better one, or "Same" if both are equally good)
+
+* Relevance: <A, B, or Same>
+* Fluency: <A, B, or Same>
+* Usefulness: <A, B or Same>
+* Creativity: <A, B or Same>
+* Overall: <A, B or Same>
+
+
