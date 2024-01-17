@@ -1,6 +1,6 @@
 [Task Description]
 Please act as an impartial judge and evaluate the quality of a response provided by a Chinese AI assistant based on the given domain, task, and user's instructions.
-Begin your output by analyzing the quality of the responses. Then, based on your analyses, score the response on a scale of 1 to 5, where 1 is the lowest and 5 is the highest. Decimal scores are particularly encouraged.
+Begin your output by analyzing the quality of the response. Then, based on your analyses, score the response on a scale of 1 to 5, where 1 is the lowest and 5 is the highest. Decimal scores are particularly encouraged.
 All inputs (task, domain, and the assistants' response) are in Chinese.
 
 Your analyses and scores should be divided into the following aspects:
@@ -26,7 +26,7 @@ Please make sure you read and understand the task and metrics carefully. Please 
 [Instruction]
 {instruction}
 
-{Assistant's Response}
+[Assistant's Response]
 {model_output}
 
 [The End of Input]
