@@ -6,13 +6,11 @@ import pandas as pd
 import argparse
 
 
-data = np.random.random([5, 5])
-
-print(data)
-
-fig = sns.heatmap(data=data, square=True, center=0.5, cmap='RdBu_r', annot=True, xticklabels=['a', 'b', 'c', 'd', 'e'], yticklabels=['a', 'b', 'c', 'd', 'e'])
-plt.title('test')
-plt.show()
+# data = np.random.random([5, 5])
+# print(data)
+# fig = sns.heatmap(data=data, square=True, center=0.5, cmap='RdBu_r', annot=True, xticklabels=['a', 'b', 'c', 'd', 'e'], yticklabels=['a', 'b', 'c', 'd', 'e'])
+# plt.title('test')
+# plt.show()
 
 
 def draw_heatmap(input_file, metric, model_names, center, cmap, pad=0):
